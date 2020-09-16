@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FitNow</title>
+    <base href="/" />
+    <link rel="canonical" href="https://www.fitnow.com.ar" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /* Variables! */
+      :root {
+        --gear-color-a: #fc7152;
+        --gear-color-b: #ffb521;
+        --gear-background: white;
+      }
+      .container-illus {
+        width: 100%;
+        display: flex;
+        height: 12vh;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .big-circle {
+        display: flex;
+        height: 100px;
+        width: 100px;
+        border: 1px solid var(--gear-color-a);
+        background-color: var(--gear-color-a);
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        position: absolute;
+      }
+
+      .mod-colors-b {
+        border: 1px solid var(--gear-color-b) !important;
+        background-color: var(--gear-color-b) !important;
+      }
+
+      .small-circle {
+        display: flex;
+        width: 25px;
+        height: 25px;
+        background-color: var(--gear-background);
+
+        border-radius: 100%;
+      }
+
+      .square {
+        width: 25px;
+        height: 25px;
+        border: var(--gear-color-a) 1px solid;
+        background-color: var(--gear-color-a);
+      }
+
+      .circle-sides {
+        position: absolute;
+      }
+
+      .bottom-side {
+        bottom: 0;
+        transform: rotate(90deg);
+        right: 79px;
+      }
+
+      .bottom-corner-side {
+        bottom: -13px;
+        transform: rotate(227deg);
+        right: 17px;
+      }
+
+      .middle-side {
+        right: 2px;
+        bottom: 35px;
+        transform: rotate(-193deg);
+      }
+
+      .middle-left-side {
+        transform: rotate(45deg);
+        top: -12px;
+        left: 16px;
+      }
+
+      .top-most-side {
+        transform: rotate(107deg);
+        right: 36px;
+        top: -24px;
+      }
+
+      .corner-bottom-left {
+        top: 39px;
+        transform: rotate(-17deg);
+        left: 3px;
+      }
+
+      .bottom-side {
+        transform: rotate(-77deg);
+        bottom: -25px;
+        right: 62px;
+      }
+
+      .tilt {
+        transform: rotate(-75deg);
+        width: 15px;
+        position: relative;
+        top: 36px;
+        right: -8px;
+      }
+
+      .tilt-other-side {
+        transform: rotate(75deg);
+        width: 15px;
+        position: relative;
+        bottom: 36px;
+        right: -8px;
+      }
+
+      .sides-container {
+        position: absolute;
+        height: 8rem;
+        width: 8rem;
+        border-radius: 100%;
+      }
+
+      .top-container {
+        height: 30vh;
+        margin-top: 5rem;
+        position: relative;
+      }
+
+      .mod {
+        position: absolute;
+        top: 100px;
+        right: 64px;
+      }
+      .mod-2 {
+        position: absolute;
+        top: 109px;
+        left: 54px;
+      }
+      @media screen and (max-width: 600px) {
+        .bottom-container h1 {
+          margin-top: 4rem !important;
+        }
+      }
+    </style>
+  </head>
+  <body
+    style="
+      margin: 0;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+      box-sizing: border-box;
+      background-image: url('./background.jpg');
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    "
+  >
+    <img
+      src="./fitnow.png"
+      style="
+        width: 10vh;
+        box-sizing: border-box;
+        padding: 1rem;
+        align-self: flex-start;
+      "
+    />
+    <div class="top-container">
+      <div class="container-illus">
+        <div class="big-circle">
+          <div class="small-circle"></div>
+        </div>
+        <div class="sides-container">
+          <div class="circle-sides bottom-corner-side">
+            <div class="square tilt"></div>
+            <div class="square"></div>
+            <div class="square tilt-other-side"></div>
+          </div>
+          <div class="circle-sides middle-side">
+            <div class="square tilt"></div>
+            <div class="square"></div>
+            <div class="square tilt-other-side"></div>
+          </div>
+          <div class="circle-sides top-most-side">
+            <div class="square tilt"></div>
+            <div class="square"></div>
+            <div class="square tilt-other-side"></div>
+          </div>
+          <div class="circle-sides middle-left-side">
+            <div class="square tilt"></div>
+            <div class="square"></div>
+            <div class="square tilt-other-side"></div>
+          </div>
+          <div class="circle-sides corner-bottom-left">
+            <div class="square tilt"></div>
+            <div class="square"></div>
+            <div class="square tilt-other-side"></div>
+          </div>
+          <div class="circle-sides bottom-side">
+            <div class="square tilt"></div>
+            <div class="square"></div>
+            <div class="square tilt-other-side"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-illus mod-2">
+        <div class="big-circle mod-colors-b">
+          <div class="small-circle"></div>
+        </div>
+        <div class="sides-container">
+          <div class="circle-sides bottom-corner-side">
+            <div class="square mod-colors-b tilt"></div>
+            <div class="square mod-colors-b"></div>
+            <div class="square mod-colors-b tilt-other-side"></div>
+          </div>
+          <div class="circle-sides middle-side">
+            <div class="square mod-colors-b tilt"></div>
+            <div class="square mod-colors-b"></div>
+            <div class="square mod-colors-b tilt-other-side"></div>
+          </div>
+          <div class="circle-sides top-most-side">
+            <div class="square mod-colors-b tilt"></div>
+            <div class="square mod-colors-b"></div>
+            <div class="square mod-colors-b tilt-other-side"></div>
+          </div>
+          <div class="circle-sides middle-left-side">
+            <div class="square mod-colors-b tilt"></div>
+            <div class="square mod-colors-b"></div>
+            <div class="square mod-colors-b tilt-other-side"></div>
+          </div>
+          <div class="circle-sides corner-bottom-left">
+            <div class="square mod-colors-b tilt"></div>
+            <div class="square mod-colors-b"></div>
+            <div class="square mod-colors-b tilt-other-side"></div>
+          </div>
+          <div class="circle-sides bottom-side">
+            <div class="square mod-colors-b tilt"></div>
+            <div class="square mod-colors-b"></div>
+            <div class="square mod-colors-b tilt-other-side"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-illus mod">
+        <div class="big-circle">
+          <div class="small-circle"></div>
+        </div>
+        <div class="sides-container">
+          <div class="circle-sides bottom-corner-side">
+            <div class="square tilt"></div>
+            <div class="square"></div>
+            <div class="square tilt-other-side"></div>
+          </div>
+          <div class="circle-sides middle-side">
+            <div class="square tilt"></div>
+            <div class="square"></div>
+            <div class="square tilt-other-side"></div>
+          </div>
+          <div class="circle-sides top-most-side">
+            <div class="square tilt"></div>
+            <div class="square"></div>
+            <div class="square tilt-other-side"></div>
+          </div>
+          <div class="circle-sides middle-left-side">
+            <div class="square tilt"></div>
+            <div class="square"></div>
+            <div class="square tilt-other-side"></div>
+          </div>
+          <div class="circle-sides corner-bottom-left">
+            <div class="square tilt"></div>
+            <div class="square"></div>
+            <div class="square tilt-other-side"></div>
+          </div>
+          <div class="circle-sides bottom-side">
+            <div class="square tilt"></div>
+            <div class="square"></div>
+            <div class="square tilt-other-side"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bottom-container"
+      style="height: 40vh; padding: 0 2rem; text-align: center"
+    >
+      <h1 style="margin-top: 3rem">La página se encuentra en mantenimiento.</h1>
+    </div>
+  </body>
+</html>
